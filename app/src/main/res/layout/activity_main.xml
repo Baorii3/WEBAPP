@@ -12,4 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
+    <Button
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
