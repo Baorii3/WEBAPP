@@ -16,13 +16,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+        // BINDING
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // CONFIGURACIÓN NECESARIA
+        // Configuracion
         binding.webView.webViewClient = WebViewClient()
         binding.webView.settings.javaScriptEnabled = true
         binding.webView.settings.domStorageEnabled = true
+
+        // URL
         binding.webView.loadUrl("https://cv.chalichen.cat")
     }
 }
